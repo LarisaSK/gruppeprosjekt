@@ -14,7 +14,7 @@ namespace bacit_dotnet.MVC.Models.Employee
         [Display(Name = "Navn")]
         public string EmpName { get; set; }
       
-        [Required(ErrorMessage = "Gruppe ID er et obligatorisk felt")]
+        [Required(ErrorMessage = "Team ID er et obligatorisk felt")]
         [Display(Name ="Gruppe ID")]
         public int TeamId { get; set; }
         
