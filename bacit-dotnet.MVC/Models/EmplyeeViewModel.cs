@@ -3,11 +3,12 @@ using System.ComponentModel.DataAnnotations;
 
 namespace bacit_dotnet.MVC.Models.Employee
 {
-    public class EmplyeeViewModel
+    public class EmployeeViewModel
     {
         [Required (ErrorMessage ="Ansatt ID er et obligatorisk felt")]
         [Display (Name ="Ansatt ID")]
-        [MinLength(7)]
+        [MinLength(7), MaxLength(7)]
+        
         public int EmployeeId { get; set; }
 
         [Required(ErrorMessage = "Navn er et obligatorisk felt")]
